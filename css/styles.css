@@ -376,6 +376,7 @@ header {
 }
 
 .footer-subscribe {
+	display: flex;
 	gap: 24px;
 }
 
