@@ -744,6 +744,7 @@ header {
 	overflow-y: auto;
 	background-color: transparent;
 	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	color: rgba(46, 47, 66, 0.4);
 }
 
 .form-textarea:focus {
@@ -756,7 +757,7 @@ header {
 }
 
 .form-button {
-	width: 169px;
+	min-width: 169px;
 	height: 56px;
 	border: none;
 	border-radius: 4px;
@@ -767,10 +768,10 @@ header {
 	line-height: 1.5;
 	letter-spacing: 0.04em;
 	color: #ffffff;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	display: block;
+	cursor: pointer;
 	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form {
@@ -784,7 +785,7 @@ header {
 .accept-label {
 	line-height: 1.17;
 	font-family: "Roboto" sans-serif;
-	font-size: 12;
+	font-size: 12px;
 	font-weight: 400;
 	letter-spacing: 0.04em;
 	color: #8E8F99;
@@ -792,4 +793,26 @@ header {
 
 .form-checkbox {
 	margin-bottom: 24px;
+}
+
+.accept-policy {
+	width: 16px;
+	height: 16px;
+	border: 1px solid rgba(46, 47, 66, 0.4);
+	border-radius: 2px;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	fill: transparent;
+}
+
+.accept-label:checked + .tick {
+	background-color: #404bbf;
+	border: none;
+	fill: #F4F4FD;
+}
+
+.policy {
+	color: #4d5ae5;
 }
