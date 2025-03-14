@@ -807,7 +807,7 @@ header {
 	fill: transparent;
 }
 
-.accept-label:checked + .tick {
+.form-checkbox input:checked ~ .accept-label .accept-policy {
 	background-color: #404bbf;
 	border: none;
 	fill: #F4F4FD;
